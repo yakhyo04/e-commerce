@@ -1,0 +1,119 @@
+.menu{
+    padding: 50px 0;
+    &__title{
+        color: #22262A;
+        font-size: 30px;
+        text-align: center;
+        // font-size: 50px;
+        // word-break: break-all;
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        margin: 0 auto;
+        padding: 15px 0 0 0;
+    }
+    &__price{
+        color: #40BFFF;
+        font-size: 18px;
+    }
+    &__div{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__link{
+        text-decoration: none;
+        border-bottom: 1px solid #33A0FF;
+        color: #33A0FF;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        margin: auto;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .content{
+    display: none;
+  }
+  .row,
+  .row > .column {
+    padding: 10px 0;
+  }      
+  .column {
+    float: left;
+    width: 33.33%;
+    width: 300px;
+    display: none;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .content {
+    background-color: white;
+    text-align: center;
+    border: 3px solid #F6F7F8;
+    border-radius: 5px;
+    margin: auto;
+  }
+  .show {
+    display: block;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    /* padding: 12px 16px; */
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: #33A0FF;
+  }
+  
+  .btn.active {
+    color: #33A0FF;
+    border-bottom: 2px solid #33A0FF;
+  }
+  
+  #myBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 1000px){
+    .content{
+      width: 280px;
+    }
+    .column{
+      margin: 0 auto;
+    }
+    #myBtnContainer{
+      width: auto;
+      padding: 20px 40px;
+    }
+    .menu{
+      &__title{
+        width: 200px;
+        margin: auto;
+        font-size: 22px;
+      }
+    }
+  }

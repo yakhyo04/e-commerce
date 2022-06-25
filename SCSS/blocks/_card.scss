@@ -1,0 +1,88 @@
+.card{
+    &__div{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__divv{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav{
+        width: 380px;
+        padding: 30px 40px;
+        border-radius: 10px;
+        margin-top: -100px;
+        background-color: #fdfcfc;
+        border: 1px solid #f6f6f6;
+        &:hover{
+            cursor: pointer;
+            background-color: #E3E3E3;
+        }
+    }
+    &__heading{
+        width: 200px;
+        font-size: 18px;
+        color: #223263;
+        &__2{
+            width: 178px;
+        }
+    }
+    &__img1{
+        width: 100%;
+        margin: -38px -50px;
+        padding: 0px 0;
+    }
+    &__img2{
+        width: 100%;
+        margin: -46px -10px;
+        padding: 29px 0;
+    }
+    &__img3{
+        width: 100%;
+        margin: -41px 0px;
+    }
+    &__price{
+        font-size: 20px;
+        color: #40BFFF;
+    }
+    &__sub{
+        font-size: 25px;
+    }
+    &__grey{
+        color: #9098B1;
+    }
+    &__red{
+        color: #FB7181;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1170px){
+    .card{
+        &__nav{
+            &:last-child{
+                margin: 40px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .card{
+        &__nav{
+            &:nth-child(2){
+                margin: 40px 0 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .card{
+        &__nav{
+            width: 350px;
+        }
+    }
+}

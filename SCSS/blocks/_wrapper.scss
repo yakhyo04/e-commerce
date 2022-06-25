@@ -1,0 +1,126 @@
+.wrapper{
+    padding: 100px 0;
+    &__menu{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        &--item{
+            width: 300px;
+            margin: 0 auto;
+        }
+        &--list{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__about{
+        color: #262626;
+        font-size: 20px;
+    }
+    &__p{
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+    }
+    &__title{
+        font-size: 22px;
+        padding: 10px 0;
+    }
+    &__heading{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 100px 0 70px 0;
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+    }
+    &__image{
+        padding-right: 30px;
+    }
+    &__date{
+        color: #C1C8CE;
+    }
+    &__desc{
+        color:#22262A;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__info{
+        color: #22262A;
+        font-weight: 400;
+    }
+    &__form{
+        width: 500px;    
+        margin: 100px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background-color:#BCDDFE;
+        padding: 2px;
+    }
+    &__input{
+        width: 400px;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+    }
+    &__btn{
+        background-color:#40BFFF;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1170px){
+    .wrapper{
+        &__item{
+            &:last-child{
+                margin: 100px auto;
+            }
+        }
+        &__menu{
+            &--item{
+                padding: 30px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .wrapper{
+        &__item{
+            &:nth-child(2){
+                margin: 100px auto 0 auto;
+            }
+        }
+        &__form{
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .wrapper{
+        &__form{
+            width: 350px;
+        }
+    }
+}

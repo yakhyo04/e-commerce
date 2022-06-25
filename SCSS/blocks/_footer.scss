@@ -1,0 +1,120 @@
+.footer{
+  background-color: #BCDDFE;
+  color: #22262A;
+  padding: 100px 0 0 0;
+  &__div{
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-wrap: wrap;
+  }
+  &__nav{
+    width: 200px;
+    &:first-child{
+      width: 350px;
+    }
+  }
+  &__icon{
+    width: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  &__logo{
+    padding: 20px 0;
+  }
+  &__heading{
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0 0 0;
+  }
+  &__submenu{
+    list-style-type: none;
+  }
+  &__info{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #22262A;
+    padding: 15px 0;
+  }
+  &__subitem{
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+    padding: 4px 0;
+    cursor: pointer;
+  }
+  &__hr{
+    padding: 1px;
+    border: none;
+    background-color: #F6F7F8;
+    margin-top: 50px;
+  }
+  &__visa {
+    width: 38px;
+    cursor: pointer;
+  }
+  &__icon2 {
+    cursor: pointer;
+  }
+  &__bottom{
+    &--menu{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+      flex-wrap: wrap;
+    }
+  }
+  &__description {
+    color: #c1c8ce;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 440px){
+  .footer{
+    text-align: center;
+    &__nav{
+      width: auto;
+      margin: 0 auto;
+    }
+    &__icon{
+      margin: 10px auto;
+    }
+    &__menu{
+      display: block;
+    }
+    &__item{
+      padding: 20px 0;
+    }
+    &__description{
+      font-size: 12px;
+      margin: 0 0 0 40px;
+    }
+    &__icons{
+      width: 250px;
+      margin: 0 0 0 40px;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

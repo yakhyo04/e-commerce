@@ -1,0 +1,30 @@
+.image{
+  width: 100%;
+  background-image: url('./../../media/Images/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title{
+    width: 570px;
+    font-size: 64px;
+    color: #fff;
+    padding: 160px 0;
+  }
+}
+
+@media (max-width: 800px){
+  .image{
+    &__title{
+      width: auto;
+      font-size: 40px;
+      padding: 160px 20px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .image{
+    &__title{
+      width: 300px;
+    }
+  }
+}
