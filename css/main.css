@@ -803,6 +803,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .column-link {
+    margin: 30px auto;
+  }
+}
+
 .shoe {
   background-color: #40BFFF;
   color: #fff;
