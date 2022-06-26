@@ -1,0 +1,193 @@
+.slider{
+    &__div{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        padding: 10px 6px;
+        &:first-child{
+            color:#C1C8CE;
+        }
+        &:last-child{
+            color: #33A0FF;
+        }
+    }
+    &__nav{
+        &--div{
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__heading{
+        color: #22262A;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__price{
+        color: #40BFFF;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__del{
+        color: #9098B1;
+        padding: 10px;
+    }
+    &__red{
+        color: #FB7181;
+        padding: 10px;
+    }
+    &__hr{
+        background-color: #F6F7F8;
+        border: none;
+        padding: 2px;
+    }
+    &__text{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        color:#262626;
+        font-size: 14px;
+        padding: 10px 0;
+        align-items: center;
+    }
+    &__color{
+        color: #262626;
+        padding: 20px 0;
+    }
+    &__blue{
+        background-color: #006CFF;
+        padding: 0 10px;
+        border-radius: 50%;
+    }
+    &__redBtn{
+        background-color: #FC3E39;
+        padding: 0 10px;
+        border-radius: 50%;
+    }
+    &__black{
+        background-color: #171717;
+        padding: 0 10px;
+        border-radius: 50%;
+    }
+    &__yellow{
+        background-color: #FFF600;
+        padding: 0 10px;
+        border-radius: 50%;
+    }
+    &__select{
+        border: 2px solid #F1F3F4;
+        padding: 10px 20px;
+        color:#22262A;
+        outline: none;
+        cursor: pointer;
+    }
+    &__submenu{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__subitem{
+        &--text{
+            background-color: #F6F7F8;
+            padding: 10px 30px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+    }
+    &__minus{
+        color: #33A0FF;
+    }
+    &__subitem{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__heart{
+        width: 40px;
+        // height: 10px;
+        margin: 20px 0;
+        background-color: #EBF5FF;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    &__cart{
+        display: flex;
+        align-items: center;
+        background-color: #EBF5FF;
+        padding: 10px 20px;
+        margin: 20px 0;
+        color: #33A0FF;
+        cursor: pointer;
+    }
+    &__facebook{
+        // width: 190px;
+        background-color: #385C8E;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+    &__twitter{
+        // width: 190px;
+        background-color: #03A9F4;
+        color: #fff;
+        margin: 20px 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__row2{
+        margin: 40px 0;
+    }
+    &__slideshow{
+        margin: -30px 0 0 0;
+        &--heading{
+            color: #C1C8CE;
+            font-size: 18px;
+            padding: 40px 0 0 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .slider{
+        &__div{
+            justify-content: center;
+        }
+        &__nav{
+            &--div{
+                width: 100%;
+                width: auto;
+                display: block;
+            }
+        }
+        &__slideshow{
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

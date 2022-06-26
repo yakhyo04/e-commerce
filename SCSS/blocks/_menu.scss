@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         width: 150px;
-        margin: 0 auto;
+        margin: 0 0;
         padding: 15px 0 0 0;
     }
     &__price{
@@ -50,11 +50,38 @@
   .row > .column {
     padding: 10px 0;
   }      
+  .hover-icon{
+    display: none;
+  }
+  .column-link{
+    text-decoration: none;
+    color: #22262A;
+  }
   .column {
     float: left;
     width: 33.33%;
     width: 300px;
     display: none;
+    position: relative;
+    &:hover{
+      opacity: 0.4;
+      cursor: pointer;
+      .hover-icon{
+        width: 100px;
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > img {
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 50%;
+        }
+      }
+    }
   }
   .row:after {
     content: "";

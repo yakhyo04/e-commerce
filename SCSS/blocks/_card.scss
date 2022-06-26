@@ -18,7 +18,10 @@
         border: 1px solid #f6f6f6;
         &:hover{
             cursor: pointer;
+            background: rgba(255, 255, 255, 0.1);
             background-color: #E3E3E3;
+            opacity: 0.8;
+            backdrop-filter: blur(33px);
         }
     }
     &__heading{
@@ -33,15 +36,24 @@
         width: 100%;
         margin: -38px -50px;
         padding: 0px 0;
+        &:hover{
+            opacity: 0.4;
+        }
     }
     &__img2{
         width: 100%;
         margin: -46px -10px;
         padding: 29px 0;
+        &:hover{
+            opacity: 0.4;
+        }
     }
     &__img3{
         width: 100%;
         margin: -41px 0px;
+        &:hover{
+            opacity: 0.4;
+        }
     }
     &__price{
         font-size: 20px;
