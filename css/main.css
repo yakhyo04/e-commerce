@@ -1535,25 +1535,25 @@ body {
 
 .slider__blue {
   background-color: #006CFF;
-  padding: 0 10px;
+  padding: 10px;
   border-radius: 50%;
 }
 
 .slider__redBtn {
   background-color: #FC3E39;
-  padding: 0 10px;
+  padding: 10px;
   border-radius: 50%;
 }
 
 .slider__black {
   background-color: #171717;
-  padding: 0 10px;
+  padding: 10px;
   border-radius: 50%;
 }
 
 .slider__yellow {
   background-color: #FFF600;
-  padding: 0 10px;
+  padding: 10px;
   border-radius: 50%;
 }
 
