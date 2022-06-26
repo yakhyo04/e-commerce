@@ -63,6 +63,7 @@
     width: 300px;
     display: none;
     position: relative;
+    margin: 30px 0 0 0;
     &:hover{
       opacity: 0.4;
       cursor: pointer;
@@ -113,6 +114,7 @@
   .btn.active {
     color: #33A0FF;
     border-bottom: 2px solid #33A0FF;
+    background-color: transparent;
   }
   
   #myBtnContainer{
@@ -147,6 +149,6 @@
 
   @media (max-width: 600px){
     .column-link{
-      margin: 30px auto;
+      margin: 20px auto;
     }
   }
