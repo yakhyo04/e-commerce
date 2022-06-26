@@ -1301,7 +1301,6 @@ body {
 }
 
 .tab__links {
-  background-color: inherit;
   float: left;
   border: none;
   outline: none;
@@ -1312,14 +1311,17 @@ body {
   font-size: 18px;
   color: #2E90E5;
   line-height: 27px;
+  background-color: transparent;
 }
 
 .tab__links:hover {
   border-bottom: 2px solid #2E90E5;
+  background-color: #FAFAFB;
 }
 
 .tab__links:active {
   border-bottom: 2px solid #2E90E5;
+  background-color: #FAFAFB;
 }
 
 .tab__content {
